@@ -24,7 +24,7 @@ jobs:
       run: dotnet publish SocialMedia.csproj -c Release -o release --nologo
       
     - name: Commit wwwroot to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@4.3.3
+      uses: JamesIves/github-pages-deploy-action@v4.3.3
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
